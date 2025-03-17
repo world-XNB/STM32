@@ -1,11 +1,37 @@
-# STM32
-STM32 components
+# STM32 + esp32
+STM32 and esp32 components
 
 1. board  
-STM32f103C8T6
+STM32f103C8T6 + esp32s
 
 2. tool chain  
-STM32CUBEMX + MDK-ARM + STLink
+    - STM32: STM32CUBEMX + MDK-ARM + STLink
+    - esp32: vscode + espidf  
 
-## Led
-Led：PC13
+## STM32
+
+### Led
+Led：PC13  
+
+### OTA
+Upgrade the STM32 OTA using wifi(esp32s)
+
+### OTA
+1. Led  
+Use LED on and off as a debugging method.
+
+2. UART  
+- Use UART as a debugging medtho.  
+- Please mark the "use micro-lib" when the printf is not avalaiable
+
+## esp32
+
+### OTA_esp32
+1. blink
+Use LED on and off as a debugging method.  
+
+2. uart
+Use UART as a debugging medtho.  
+
+3. wifi
+The wifi feature of esp32 is used as the communication protocol.

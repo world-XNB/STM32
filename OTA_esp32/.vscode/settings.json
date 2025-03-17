@@ -1,0 +1,9 @@
+{
+    "idf.portWin": "COM6",
+    "idf.flashType": "UART",
+    "files.associations": {
+        "wifi_station.h": "c",
+        "tcp_client_v4.h": "c",
+        "async_uart.h": "c"
+    }
+}
