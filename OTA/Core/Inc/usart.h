@@ -35,17 +35,25 @@ extern "C" {
 
 extern UART_HandleTypeDef huart1;
 
+extern UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN Private defines */
+#define RX_BUFFER_SIZE 128
+
 
 /* USER CODE END Private defines */
 
 void MX_USART1_UART_Init(void);
+void MX_USART2_UART_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 int fputc(int ch, FILE *fp);
 
 int fgetc(FILE *fp);
 
+void UART_SendData(uint8_t *pData, uint16_t Size);
+
+void UART_StartReceive(void);
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus

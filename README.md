@@ -20,9 +20,14 @@ Upgrade the STM32 OTA using wifi(esp32s)
 1. Led  
 Use LED on and off as a debugging method.
 
-2. UART  
+2. UART1 
 - Use UART as a debugging medtho.  
 - Please mark the "use micro-lib" when the printf is not avalaiable
+
+3. UART2
+- connect to esp32
+- rx: PA3
+- tx: PA2
 
 ## esp32
 

@@ -88,7 +88,9 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_USART1_UART_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
+	UART_StartReceive();
 
   /* USER CODE END 2 */
 
@@ -101,7 +103,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		HAL_GPIO_TogglePin(Led_GPIO_Port, Led_Pin);
 		printf("Led is toggling!\r\n");
-		HAL_Delay(5000);
+		HAL_Delay(1000);
+		
+		uint8_t test_str[] = "Hello World!\r\n";
+//		UART_SendData(test_str, sizeof(test_str));
+
   }
   /* USER CODE END 3 */
 }
